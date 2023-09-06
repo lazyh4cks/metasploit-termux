@@ -1,3 +1,12 @@
+GREEN='\033[0;32m'
+NC='\033[0m'
+echo
+echo -e Original Script by "${GREEN}@h4ck3r0${NC}"
+sleep 2.0
+echo Empezando instalación...
+sleep 1.0
+echo
+
 latestverr(){
 curl https://raw.githubusercontent.com/rapid7/metasploit-framework/master/Gemfile.lock -s|grep metasploit-framework|head -1|sed 's/ //g'|sed 's#(# #g;s#)##g;s# #: #g'|awk '{print $2}'
 }
@@ -62,4 +71,9 @@ pg_ctl -D /data/data/com.termux/files/usr/var/lib/postgresql -l logfile start
 
 cd;cd metasploit-framework;ln -s $HOME/metasploit-framework/msfvenom /data/data/com.termux/files/usr/bin/
 
-cd ~/metasploit-framework && ./msfconsole
+echo
+echo -e "${GREEN}INSTALACIÓN COMPLETA!${NC}"
+echo
+echo -e Ve al directorio "${GREEN}metasploit-framework ${NC}y"
+echo -e ejecuta "${GREEN}./msfconsole${NC}"
+echo
