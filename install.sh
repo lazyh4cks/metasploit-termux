@@ -2,7 +2,7 @@ GREEN='\033[0;32m'
 NC='\033[0m'
 echo
 echo -e Original Script by "${GREEN}@h4ck3r0${NC}"
-sleep 2.0
+sleep 1.0
 echo Empezando instalación...
 sleep 1.0
 echo
